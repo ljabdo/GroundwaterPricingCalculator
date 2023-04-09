@@ -5,7 +5,7 @@ import { createTheme } from '@mui/material/styles';
 const theme = createTheme({
     palette: {
         primary: {
-            main: '#D17A22',
+            main: '#22577A',
         },
         secondary: {
             main: '#465362',
@@ -24,25 +24,6 @@ const theme = createTheme({
         },
     },
     components: {
-        MuiButton: {
-            variants: [
-                {
-                    props: { variant: 'primary' },
-                    style: {
-                        backgroundColor: '#D17A22',
-                    },
-                },
-                {
-                    props: { variant: 'secondary' },
-                    style: {
-                        backgroundColor: '#fff',
-                        '&:hover': {
-                            backgroundColor: '#d8d8d8',
-                        },
-                    },
-                },
-            ],
-        },
     },
 });
 

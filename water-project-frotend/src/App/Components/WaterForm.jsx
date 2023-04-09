@@ -20,12 +20,12 @@ import {
 } from "@mui/material";
 
 const TextFieldNew = styled(TextField)(() => ({
-    width: "80%",
+    width: "100%",
     marginBottom: "16px",
   }));
 
 const BoxNew = styled(Box)(() => ({
-    width: "80%",
+    // width: "100%",
     marginBottom: "16px",
     padding: 50
   }));
@@ -81,7 +81,8 @@ export const WaterForm = () => {
       setState({ ...state, [event.target.name]: event.target.value });
     };
 
-    return ( 
+    return (
+      <Box>
         <form sx={{ width: '100%' }} onSubmit={handleSubmit}>
             <BoxNew>
                 <Stack spacing={3}>
@@ -119,7 +120,7 @@ export const WaterForm = () => {
                             type="number"
                             name="soil"
                             label="Soil health 1-4 scale"
-                            onChange={handleChange}
+                            onChange={handleChange} 
                             value={soil || ""}
                             validators={["required", "minFloat:0", "maxFloat:4", "isFloat"]}
                     />
@@ -192,5 +193,6 @@ export const WaterForm = () => {
                 </Button>
             </BoxNew>
         </form>
+        </Box>
     )
 }

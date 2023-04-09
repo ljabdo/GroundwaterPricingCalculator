@@ -127,7 +127,7 @@ app.post("/api", (req, res) => {
         console.log(waterCostAcre);
         console.log(totalWaterCost)
         res.send(
-            JSON.stringify({adjustedPrices, waterPriceAcre})
+            JSON.stringify({adjustedPrices, waterPriceAcre, waterCostAcre, totalWaterCost})
         );
 
         console.log("Calculated... \n");
