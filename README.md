@@ -8,6 +8,8 @@ To run move to frontend and backend directory and run on seperate node.js instan
 
 Install node.js
 
+Clone repository
+
 ```npm install```
 
 ```npm start``` ->frontend directory
